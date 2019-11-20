@@ -9,7 +9,8 @@ gpu_memory_fraction = os.environ.get('GPU_MEMORY_FRACTION', 0.1)
 set_keras_tf_session(gpu_memory_fraction)
 
 from cakechat.api.v1.server import app
+port = int(os.environ.get("PORT", 8080))
 
 if __name__ == '__main__':
     # runs development server
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=port)

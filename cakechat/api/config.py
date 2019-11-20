@@ -12,4 +12,4 @@ NUM_BEST_CANDIDATES_TO_PICK_FROM = 3
 SAMPLING_ATTEMPTS_NUM = 10
 
 # Default response text in case we weren't able to produce appropriate response.
-DEFAULT_RESPONSE = '🙊'
+DEFAULT_RESPONSE = 'Okay'

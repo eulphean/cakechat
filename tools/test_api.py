@@ -26,6 +26,7 @@ if __name__ == '__main__':
     args = parse_args()
     url = 'http://{}:{}/cakechat_api/v1/actions/get_response'.format(args.fqdn, args.port)
     body = {'context': args.context, 'emotion': args.emotion}
-
+    print (url)
+    print (body)
     response = requests.post(url, json=body)
     print(response.json())
